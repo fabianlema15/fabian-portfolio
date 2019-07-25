@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav, footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+section div {
+  margin: 10px 25px 0 25px;
+  background-color: #eee;
+  height: 100px;
+}
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+header div {
+  display: inline-block;
+  width: 48%;
+}
+
+.project {
+  height: 250px
+}
+
+.project-main {
+  display: inline-block;
+  width: 60%;
+}
+
+.project-desc {
+  display: inline-block;
+  width: 20%;
+}
