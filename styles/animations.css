@@ -1,0 +1,37 @@
+@-webkit-keyframes fadeingb{ 
+  0%   {
+      filter: brightness(1);
+      -webkit-filter: brightness(1);
+  }
+  50%  {
+      filter: brightness(0.7);
+      -webkit-filter: brightness(0.7);
+  }
+  100% {
+      filter: brightness(1);
+      -webkit-filter: brightness(1);
+  }
+} 
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slide {
+  0%   {left:-400px;}
+  100%  {left:0px;}
+}
+
+/* Standard syntax */
+@keyframes slide {
+  0%   {left:-400px;}
+  100%  {left:0px;}
+}
+
+@-webkit-keyframes fadeing{ 
+  0% { opacity: 0.1; } 
+  50% { opacity: 0.3; } 
+  100% { opacity: 0.1; } 
+} 
+
+@-webkit-keyframes falling{ 
+  from {top: -50px;} 
+  to {top: 100%;} 
+}
