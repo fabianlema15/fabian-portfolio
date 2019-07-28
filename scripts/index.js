@@ -14,6 +14,14 @@ const initial = (function(){
             </div>`);
 	}
 
+    function loadFooter(){
+        $('footer').html(`<div class="footer-links">
+            <a href="https://www.linkedin.com/in/fabian-lema-canar-79539250" target="_blank"><img class="icon" src="images/linkedin.png"></a>
+            <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png"></a>
+            <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png"></a>
+        </div>`);
+    }
+
 	function loadAboutMe(){
 		$('.js-about').addClass('selected');
 		$('.js-projets').removeClass('selected');
@@ -82,7 +90,7 @@ const initial = (function(){
                 <div class="contact-links">
                     <span>if (</span>you want to view my profile<span>){</span>
                     
-                    <a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="images/linkedin.png">LinkedIn Link</a>
+                    <a href="https://www.linkedin.com/in/fabian-lema-canar-79539250" target="_blank"><img class="icon" src="images/linkedin.png">LinkedIn Link</a>
 
                     <span>} else if (</span>you want to check my code<span>) {</span>
 
@@ -169,6 +177,7 @@ const initial = (function(){
 	function loadFunctions(){
 		loadMatrix();
 		loadHeader();
+        loadFooter();
 		loadAboutMe();
 		handleMenuItem();
 		handleSelectProject();
