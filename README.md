@@ -1,6 +1,6 @@
-https://thinkful-ei-firefly.github.io/fabian-bookmarks-app/
+https://thinkful-ei-firefly.github.io/fabian-portfolio/
 
-##### This application allows a user to add, edit and delete their favorite bookmarks
+##### This application allows a user to view my portfolio
 
 ## Requirements
 
