@@ -19,6 +19,7 @@ const initial = (function(){
             <a href="https://www.linkedin.com/in/fabian-lema-canar-79539250" target="_blank"><img class="icon" src="images/linkedin.png"></a>
             <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png"></a>
             <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png"></a>
+						<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png"></a>
         </div>`);
     }
 
@@ -50,16 +51,20 @@ const initial = (function(){
             </div>
             <hr>`);
 		let buttonsHtml = data.projects.reduce((acc, obj) => {
-			return acc + `<button class="bt-thumbnail" data-project="${obj.title}">${obj.title}<img class="thumbnail" src="${obj.thumbnail}"></button>`;
+			return acc + `<button class="bt-thumbnail" data-project="${obj.id}">${obj.title}<img class="thumbnail" src="${obj.thumbnail}"></button>`;
 		},"");
 		$('.project-thumbnail').html(`<h1>My projects</h1>${buttonsHtml}`);
 	}
 
 	function loadProjectDetail(project){
 		const icons = project.tech.reduce((acc, obj) => acc+`<img src="images/${obj.toLowerCase()}.png">`, '');
-		$('.project').html(`<div class="project-main">
+		const links = project.link.reduce((acc, obj) => acc+`<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png">${obj.name}</a>`, '');
+		const repos = project.repo.reduce((acc, obj) => acc+`<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png">${obj.name}</a>`, '');
+		$('.project').html(`
+			<div class="project-main">
                 <div class="project-img">
-                    <h2>${project.title}</h2> 
+										<a name="project"></a>
+                    <h2>${project.title}</h2>
                     <img src="${project.image}">
                 </div>
                 <div class="project-desc">
@@ -73,8 +78,8 @@ const initial = (function(){
                 </div>
                 <h3>Links</h3>
                 <div class="project-links">
-                    <a href="${project.link}" target="_blank"><img class="icon" src="images/visit.png">Live Demo</a>
-                    <a href="${project.repo}" target="_blank"><img class="icon" src="images/git.png">Visit Repo</a>
+                    ${links}
+                    ${repos}
                 </div>
             </div>`);
 	}
@@ -89,16 +94,17 @@ const initial = (function(){
 				<h1>Contacts</h1>
                 <div class="contact-links">
                     <span>if (</span>you want to view my profile<span>){</span>
-                    
-                    <a href="https://www.linkedin.com/in/fabian-lema-canar-79539250" target="_blank"><img class="icon" src="images/linkedin.png">LinkedIn Link</a>
+
+                    <p><a href="https://www.linkedin.com/in/fabian-lema-canar-79539250" target="_blank"><img class="icon" src="images/linkedin.png">LinkedIn Link</a></p>
 
                     <span>} else if (</span>you want to check my code<span>) {</span>
 
-                    <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png">Github Link</a>
+                    <p><a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png">Github Link</a><br/>
+										<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png">Bitbucket Link</a></p>
 
                     <span>} else if (</span>you want to send me a email<span>) {</span>
 
-                    <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png">Send Email</a>
+                    <p><a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png">Send Email</a></p>
 
                     <span>};</span>
 
@@ -110,8 +116,9 @@ const initial = (function(){
 
 	function handleSelectProject(){
 		$('.content').on('click', 'button', event => {
-			const project = data.projects.find(project => project.title == $(event.currentTarget).data('project'));
-			loadProjectDetail(project);			
+			const project = data.projects.find(project => project.id == $(event.currentTarget).data('project'));
+			loadProjectDetail(project);
+			window.location.href='#project'
 		});
 	}
 
@@ -130,43 +137,43 @@ const initial = (function(){
 
 	function loadMatrix(){
 		$('.matx').html(`<div class="t1" style="left:0px;">748383838383838383837377282837
-            </div> 
-            <div class="t5" style="left:8%;">74838383583838334838383737728542837</div> 
+            </div>
+            <div class="t5" style="left:8%;">74838383583838334838383737728542837</div>
             <div class="t2" style="left:15%;">
                 if (boolean=true){</br>
                     doSomething();</br>
                 }else{</br>
                     doAnotheSomething();</br>
                 }
-            </div> 
+            </div>
             <div class="t2" style="left:20%;">
                 for (int i = 0; i < list.size(); i++){</br>
                     System.println(i);</br>
                 }
-            </div> 
-            <div class="t4" style="left:25%;">4773937457484738387475748484748488</div> 
+            </div>
+            <div class="t4" style="left:25%;">4773937457484738387475748484748488</div>
             <div class="t3" style="left:35%;">
                 do{</br>
                     statements..</br>
                 }</br>
                 while (condition);
-            </div> 
-            <div class="t5" style="left:39%;">72737473392728282737382828373</div> 
+            </div>
+            <div class="t5" style="left:39%;">72737473392728282737382828373</div>
             <div class="t3" style="left:44%;">
                 if (boolean=true){</br>
                     doSomething();</br>
                 }else{</br>
                     doAnotheSomething();</br>
                 }</br>
-            </div> 
-            <div class="t1" style="left:52%;">272737372727272727272727282626278</div> 
+            </div>
+            <div class="t1" style="left:52%;">272737372727272727272727282626278</div>
             <div class="t4" style="left:59%;">do{</br>
                     statements..</br>
                 }</br>
                 while (condition);
-            </div> 
-            <div class="t2" style="left:65%;">2737474859594938272628393939493939</div> 
-            <div class="t3" style="left:74%;">7374857462627373838393939393</div> 
+            </div>
+            <div class="t2" style="left:65%;">2737474859594938272628393939493939</div>
+            <div class="t3" style="left:74%;">7374857462627373838393939393</div>
             <div class="t4" style="left:78%;">
                 for (int i = 0; i < list.size(); i++){</br>
                     System.println(i);</br>
@@ -182,6 +189,6 @@ const initial = (function(){
 		handleMenuItem();
 		handleSelectProject();
 	}
-	
+
 	loadFunctions();
 }());
