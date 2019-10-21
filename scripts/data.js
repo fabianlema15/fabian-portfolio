@@ -8,15 +8,26 @@ const data = (function(){
 		thumbnail: "images/sm5.png",
 		image: "images/bg5.png",
 		desc: "This can be the first version to be implemented in a restaurant or bar and can be used by a server or bartender. This app has some data as clients, products, promotions or combos, users with different roles, and the most important part is that we can take orders using this app on a smartphone. Also, we can get reports of sales by any period of time.",
-		tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres"],
-		link: [{name:"Demo Client", link:"https://fabian-liquor-app.now.sh/login"},
-					{name:"Demo Server", link:"https://serene-eyrie-30268.herokuapp.com/api"}],
-		repo: [{name:"Repo Client", link:"https://github.com/fabianlema15/first-capstone-client"},
-					{name:"Repo Server", link:"https://github.com/fabianlema15/first-capstone-server"}]
+		tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres", "AWS", "SendGrid"],
+		link: [{name:"Demo", link:"https://fabian-liquor-app.now.sh"}],
+		repo: [{name:"Repo Client", link:"https://github.com/fabianlema15/liquor-store-client.git"},
+					{name:"Repo Server", link:"https://github.com/fabianlema15/liquor-store-server.git"}]
 
 	},
 	{
 		id: 2,
+		title: "Easy Italian",
+		thumbnail: "images/sm8.png",
+		image: "images/bg8.png",
+		desc: "This app helps people memorize the Italian language. The app will display words in Italian, and ask you to recall the corresponding word in English.",
+		tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres"],
+		link: [{name:"Demo", link:"https://easy-italian-app.now.sh"}],
+		repo: [{name:"Repo Client", link:"https://github.com/fabianlema15/easy-italian-client.git"},
+					{name:"Repo Server", link:"https://github.com/fabianlema15/easy-italian-server.git"}]
+
+	},
+	{
+		id: 3,
 		title: "FastApp",
 		thumbnail: "images/sm3.png",
 		image: "images/bg3.png",
@@ -28,7 +39,7 @@ const data = (function(){
 
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "My Bookmarks",
 		thumbnail: "images/sm2.png",
 		image: "images/bg2.png",
@@ -39,7 +50,7 @@ const data = (function(){
 
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Multipagos",
 		thumbnail: "images/sm4.png",
 		image: "images/bg4.png",
@@ -51,7 +62,7 @@ const data = (function(){
 
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Bellsaria",
 		thumbnail: "images/sm6.png",
 		image: "images/bg6.png",
@@ -61,7 +72,7 @@ const data = (function(){
 		repo: [{name:"Repo", link:"https://bitbucket.org/fabianlema/bellsaria/"}]
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Bellsaria",
 		thumbnail: "images/sm7.png",
 		image: "images/bg7.png",
