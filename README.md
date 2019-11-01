@@ -1,4 +1,4 @@
-https://fabianlema15.github.io/fabian-portfolio/
+http://www.fabianlema.tech/
 
 ##### This application allows a user to view my portfolio
 
