@@ -4,22 +4,24 @@ const initial = (function () {
     function loadHeader() {
         $('header').html(`<div class="main-img">
                 <div class="logo-img">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" alt="Logo">
                 </div>
             </div>
             <div class="menu-bar">
+              <ul>
                 <li><button class="js-about blue selected">About me</button></li>
                 <li><button class="js-projets blue">Projects</button></li>
                 <li><button class="js-contact blue">Contact</button></li>
+              </ul>
             </div>`);
     }
 
     function loadFooter() {
         $('footer').html(`<div class="footer-links">
-            <a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png"></a>
-            <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png"></a>
-            <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png"></a>
-						<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png"></a>
+            <a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin"></a>
+            <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png" alt="Email"></a>
+            <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png" alt="Github"></a>
+						<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png" alt="Bitbucket"></a>
         </div>`);
     }
 
@@ -60,7 +62,7 @@ const initial = (function () {
             </div>
             <hr>`);
         let buttonsHtml = data.projects.reduce((acc, obj) => {
-            return acc + `<button class="bt-thumbnail" data-project="${obj.id}">${obj.title}<img class="thumbnail" src="${obj.thumbnail}"></button>`;
+            return acc + `<button class="bt-thumbnail" data-project="${obj.id}">${obj.title}<img class="thumbnail" src="${obj.thumbnail}" alt="${obj.title}"></button>`;
         }, "");
         $('.project-thumbnail').html(`<h1>My projects</h1>${buttonsHtml}`);
     }
@@ -104,16 +106,16 @@ const initial = (function () {
                 <div class="contact-links">
                     <span>if (</span>you want to view my profile<span>){</span>
 
-                    <p><a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png">LinkedIn Link</a></p>
+                    <p><a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin">LinkedIn Link</a></p>
 
                     <span>} else if (</span>you want to check my code<span>) {</span>
 
-                    <p><a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png">Github Link</a><br/>
-										<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png">Bitbucket Link</a></p>
+                    <p><a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png" alt="Github">Github Link</a><br/>
+										<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png" alt="Bitbucket">Bitbucket Link</a></p>
 
                     <span>} else if (</span>you want to send me a email<span>) {</span>
 
-                    <p><a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png">Send Email</a></p>
+                    <p><a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png" alt="Email">Send Email</a></p>
 
                     <span>};</span>
 

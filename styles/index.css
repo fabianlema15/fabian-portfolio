@@ -82,7 +82,7 @@ table {
 }
 
 .contact-links span {
-  color: #E3733F;
+  color: rgb(170, 75, 32);
 }
 
 .contact-links a {
@@ -228,7 +228,7 @@ table {
 }
 
 .about-me .clarify {
-  color: gray;
+  color: rgb(94, 93, 93);
   font-size: 14px;
 }
 
