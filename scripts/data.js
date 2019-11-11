@@ -29,7 +29,7 @@ const data = (function(){
 	{
 		id: 3,
 		title: "FastApp",
-		thumbnail: "images/sm3.png",
+		thumbnail: "images/sm4.png",
 		image: "images/bg3.png",
 		desc: "This is an app similar to Uber. You can request transportation selecting an origin and destination point, the app should calculate the value to pay and look for the closest driver. You could track the driver and see information about it. Also, the driver can see the necessary information about the rider. At this point, the app for drivers is available just for smartphones with Android.",
 		tech: ["HTML", "CSS", "RESTful", "NodeJS", "Angular", "Firebase", "Maps"],
@@ -52,7 +52,7 @@ const data = (function(){
 	{
 		id: 5,
 		title: "Multipagos",
-		thumbnail: "images/sm4.png",
+		thumbnail: "images/sm3.png",
 		image: "images/bg4.png",
 		desc: "App developed using Xamarin for front-end and NodeJs for the back-end. Using this app you can search different bills to pay like water, phone, electric energy, cable, and other services, you could select many bills, add to the shopping cart, and finally pay using a credit card. This app uses two third-party APIs, one to get a list and information about different services and another one to pay using a credit card.",
 		tech: ["HTML", "NodeJS", "RESTful", "MongoDB", "CShar", "Xamarin", "Firebase", "Android", "Apple"],
