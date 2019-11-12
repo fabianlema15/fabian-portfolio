@@ -76,13 +76,13 @@ table {
   width: 100%;
 }
 
-.about-me span, .project span {
+.about-me span, .modal-body span {
   color: #E3733F;
   font-size: 30px;
 }
 
 .contact-links span {
-  color: #E3733F;
+  color: rgb(170, 75, 32);
 }
 
 .contact-links a {
@@ -163,6 +163,7 @@ table {
 }
 
 .bt-thumbnail {
+  margin: 5px;
   color: black;
   background-color: rgba(62, 149, 182, 0.3);
   border-color: #3E95B6;
@@ -182,7 +183,7 @@ table {
   max-width: 40%;
 }
 
-.project, .references {
+.references {
   margin: 10px 15px 0 15px;
 }
 
@@ -201,8 +202,8 @@ table {
 }
 
 .thumbnail {
-  height: 100px;
-  width: 100px
+  height: 140px;
+  width: 140px
 }
 
 .tech-imgs {
@@ -227,7 +228,7 @@ table {
 }
 
 .about-me .clarify {
-  color: gray;
+  color: rgb(94, 93, 93);
   font-size: 14px;
 }
 
@@ -276,6 +277,76 @@ table {
 .t5{ 
   -webkit-animation-duration: 20s; 
 } 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 64px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  height: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  top: 20px;
+  height: 45px;
+  width: 80%;
+  background:
+      -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+      -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+      -webkit-linear-gradient(left, #E3733F, #E3733F);
+  background-size: 50px 45px, 100% 100%, 100% 100%;
+  color: black;
+  position: fixed;
+}
+
+.modal-header h2 {
+  margin-top: 0px;
+  padding-top: 3px;
+}
+
+.modal-body {
+  height: 100%;
+  padding: 2px 16px;
+  overflow: scroll;
+}
 
 @media screen and (max-width: 700px) {
   header, .project-links{
