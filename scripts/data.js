@@ -9,7 +9,7 @@ const data = (function () {
 			image: "images/bg9.png",
 			desc: "Good Meal is your digital recipe card index file, where users can create and share private and public recipes, store shopping lists, lists of items already in their pantry and create shopping lists from the recipes they have.",
 			tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres", "AWS", "Firebase"],
-			link: [{ name: "Demo", link: "https://good-meal-client.herokuapp.com" }],
+			link: [{ name: "Demo", link: "https://good-meal.now.sh" }],
 			repo: [{ name: "Repo Client", link: "https://github.com/thinkful-ei-firefly/recipe-client.git" },
 			{ name: "Repo Server", link: "https://github.com/thinkful-ei-firefly/recipe-server.git" }]
 
