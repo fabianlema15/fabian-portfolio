@@ -45,7 +45,7 @@ const data = (function () {
 			image: "images/bg3.png",
 			desc: "This is an app similar to Uber. You can request transportation selecting an origin and destination point, the app should calculate the value to pay and look for the closest driver. You could track the driver and see information about it. Also, the driver can see the necessary information about the rider. At this point, the app for drivers is available just for smartphones with Android.",
 			tech: ["HTML", "CSS", "RESTful", "NodeJS", "Angular", "Firebase", "Maps"],
-			link: [{ name: "Demo", link: "https://fabianlema.github.io/fabian-bookmarks-app/" }],
+			link: [{ name: "Demo", link: "https://app.fastapp.com.ec/" }],
 			repo: [{ name: "Repo Server-Client", link: "https://bitbucket.org/fabianlema/fastapp" },
 			{ name: "Repo Driver (Android)", link: "https://bitbucket.org/fabianlema/fastappdriver" }]
 
