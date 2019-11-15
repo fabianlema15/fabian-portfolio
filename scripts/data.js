@@ -55,7 +55,7 @@ const data = (function () {
 			title: "My Bookmarks",
 			thumbnail: "images/sm2.png",
 			image: "images/bg2.png",
-			desc: "This application allows a user to list, add, edit, and delete their favorite bookmarks. Each bookmark has its description, web site information, and the corresponding rating. If you like navigate to its web site you will be able to do it. Also, you will be able to filter all data depending rating of the bookmark.",
+			desc: "This application allows a user to list, add, edit, and delete their favorite bookmarks. Each bookmark has its description, web site information, and the corresponding rating. Users can also navigate to the bookmarked website and filter the data by the bookmark's rating.",
 			tech: ["HTML", "Javascript", "CSS", "Jquery", "RESTful"],
 			link: [{ name: "Demo", link: "https://fabianlema15.github.io/fabian-bookmarks-app/" }],
 			repo: [{ name: "Repo", link: "https://github.com/fabianlema15/fabian-bookmarks-app" }]
@@ -78,20 +78,11 @@ const data = (function () {
 			title: "Bellsaria",
 			thumbnail: "images/sm6.png",
 			image: "images/bg6.png",
-			desc: "Java application developer to a contact center, stores basic information about each call that the agent receives. The app is always looking for emails that get to help desk and show to the agent to answer it. If some message gets to a social network like Facebook or Twitter, the app should be know about it and get to the agent the option to answer it. If you want to send massive text message you can use this app to do it. Finally, this app has implemented a button 'Click to call' to call any person. To run all functionalities this app needs to be connected to Cisco UCCX, Cisco Social Miner, Gateway 2N, and should be loaded in Cisco Agent Desktop.",
-			tech: ["HTML", "Jquery", "Java", "Hibernate", "SQLServer", "Cisco"],
+			desc: 'Application used by call centers. Stores basic information about each call that the agent receives. The app checks for incoming emails to the help desk, then shows them to the agent. If messages come in via social networks like Facebook or Twitter, the app will also receive these messages and notify the agent. The app also has the ability to send bulk text messages. Finally, this app has a "Click to call" button that can be used to call any person. The app utilizes Cisco UCCX, Cisco Social Miner, Gateway 2N, and runs in Cisco Agent Desktop.',
+			tech: ["HTML", "Jquery", "Java", "Hibernate", "SQLServer", "Cisco", "Python", "Django"],
 			link: [],
-			repo: [{ name: "Repo", link: "https://bitbucket.org/fabianlema/bellsaria/" }]
-		},
-		{
-			id: 8,
-			title: "Bellsaria",
-			thumbnail: "images/sm7.png",
-			image: "images/bg7.png",
-			desc: "Python application developer to a contact center, stores basic information about each call that the agent receives. The app is always looking for emails that get to help desk and show to the agent to answer it. If some message gets to a social network like Facebook or Twitter, the app should be know about it and get to the agent the option to answer it. If you want to send massive text message you can use this app to do it. Finally, this app has implemented a button 'Click to call' to call any person. To run all functionalities this app needs to be connected to Cisco UCCX, Cisco Social Miner, Gateway 2N, and should be loaded in Cisco Agent Desktop.",
-			tech: ["HTML", "Jquery", "Python", "Django", "SQLServer", "Cisco"],
-			link: [],
-			repo: [{ name: "Repo", link: "https://bitbucket.org/fabianlema/bellsaria-python" }]
+			repo: [{ name: "Repo Java", link: "https://bitbucket.org/fabianlema/bellsaria/" },
+			{ name: "Repo Python", link: "https://bitbucket.org/fabianlema/bellsaria-python" }]
 		}];
 
 	return {

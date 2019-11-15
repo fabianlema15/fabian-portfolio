@@ -9,7 +9,7 @@ const initial = (function () {
             </div>
             <div class="menu-bar">
               <ul>
-                <li><button class="js-about blue selected">About me</button></li>
+                <li><button class="js-about blue">About me</button></li>
                 <li><button class="js-projets blue">Projects</button></li>
                 <li><button class="js-contact blue">Contact</button></li>
               </ul>
@@ -26,14 +26,14 @@ const initial = (function () {
     }
 
     function loadAboutMe() {
-        $('.js-about').addClass('selected');
+        /*$('.js-about').addClass('selected');
         $('.js-projets').removeClass('selected');
-        $('.js-contact').removeClass('selected');
+        $('.js-contact').removeClass('selected');*/
         $('.content').html(`<hr>
             <div class="panel about-me">
             	<h1>I'm Fabian</h1>
-                <p><span>{</span> I'm a web developer who knows how to make reality all your dreams <span class="clarify">(talking about creating web sites)</span>.<span>}</span></p>
-                <p><span>{</span>I can develop your projects in different technologies like Javascript and Java. If you were thinking about other technology like C# or Python, don't worry, I can do it too.<span>}</span></p>
+                <p><span>{</span> I'm a web developer who knows how to make all your dreams a reality <span class="clarify">(talking about creating web sites)</span>.<span>}</span></p>
+                <p><span>{</span>I can develop your projects in different technologies like Javascript and Java. If you were thinking about other technologies like C# or Python, don't worry, I can do it too.<span>}</span></p>
                 <p><span>{</span>I love challenges and never give up. If some difficulty is in front of me, I always look for different ways to solve it.<span>}</span></p>
                 <p><span>{</span>In my free time, I like to dance folkloric music, play soccer, fishing, ride on the bike, and other activities to enjoy with family and friends.<span>}</span></p>
 
@@ -54,9 +54,9 @@ const initial = (function () {
     }
 
     function loadProjects() {
-        $('.js-about').removeClass('selected');
+        /*$('.js-about').removeClass('selected');
         $('.js-projets').addClass('selected');
-        $('.js-contact').removeClass('selected');
+        $('.js-contact').removeClass('selected');*/
         $('.content').html(`<hr>
 			<div class="project-thumbnail">
             </div>
@@ -96,9 +96,9 @@ const initial = (function () {
     }
 
     function loadContact() {
-        $('.js-about').removeClass('selected');
+        /*$('.js-about').removeClass('selected');
         $('.js-projets').removeClass('selected');
-        $('.js-contact').addClass('selected');
+        $('.js-contact').addClass('selected');*/
         $('.content').html(`
 			<hr>
 			<div class="panel">
