@@ -87,6 +87,7 @@ table {
 
 .contact-links a {
   margin: 0 auto;
+  width: 200px;
 }
 
 .references {
@@ -107,21 +108,26 @@ table {
   display: flex;
 }
 
-.project-links img{
+.project-links img, .contact-links img {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.project-links a{
+.project-links a, .contact-links a {
   text-decoration: none;
-  color:  #3E95B6;
-  border: 1px solid #3E95B6;
+  color:  rgb(34, 116, 148);
+  border: 1px solid rgb(34, 116, 148);
   border-radius: 5px;
 }
 
 .project-links a:hover, .project-links a:focus {
   color: rgb(221, 59, 59);
   border: 1px solid rgb(221, 59, 59);
+}
+
+.contact-links a:hover, .contact-links a:focus {
+  color: rgb(170, 75, 32);
+  border: 1px solid rgb(170, 75, 32);
 }
 
 .footer-links{

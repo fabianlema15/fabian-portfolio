@@ -68,15 +68,15 @@ const initial = (function () {
     }
 
     function loadProjectDetail(project) {
-        const icons = project.tech.reduce((acc, obj) => acc + `<img src="images/${obj.toLowerCase()}.png">`, '');
-        const links = project.link.reduce((acc, obj) => acc + `<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png">${obj.name}</a>`, '');
-        const repos = project.repo.reduce((acc, obj) => acc + `<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png">${obj.name}</a>`, '');
+        const icons = project.tech.reduce((acc, obj) => acc + `<img src="images/${obj.toLowerCase()}.png" alt="${obj}">`, '');
+        const links = project.link.reduce((acc, obj) => acc + `<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png" alt="${obj.name}">${obj.name}</a>`, '');
+        const repos = project.repo.reduce((acc, obj) => acc + `<a href="${obj.link}" target="_blank"><img class="icon" src="images/visit.png" alt="${obj.name}">${obj.name}</a>`, '');
         $('#project-modal').show();
         $('.modal-title').html(`${project.title}`);
         $('.modal-body').html(`
 			<div class="project-main">
                 <div class="project-img">
-                    <img src="${project.image}">
+                    <img src="${project.image}" alt="Screenshot">
                 </div>
                 <div class="project-desc">
                     <p><span>{</span>${project.desc}<span>}</span>
