@@ -4,18 +4,6 @@ const data = (function () {
 	const projects = [
 		{
 			id: 1,
-			title: "Good Meal",
-			thumbnail: "images/sm9.png",
-			image: "images/bg9.png",
-			desc: "Good Meal is your digital recipe card index file, where users can create and share private and public recipes, store shopping lists, lists of items already in their pantry and create shopping lists from the recipes they have.",
-			tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres", "AWS", "Firebase"],
-			link: [{ name: "Demo", link: "https://good-meal.now.sh" }],
-			repo: [{ name: "Repo Client", link: "https://github.com/thinkful-ei-firefly/recipe-client.git" },
-			{ name: "Repo Server", link: "https://github.com/thinkful-ei-firefly/recipe-server.git" }]
-
-		},
-		{
-			id: 2,
 			title: "Liquor Store",
 			thumbnail: "images/sm5.png",
 			image: "images/bg5.png",
@@ -24,6 +12,18 @@ const data = (function () {
 			link: [{ name: "Demo", link: "https://fabian-liquor-app.now.sh" }],
 			repo: [{ name: "Repo Client", link: "https://github.com/fabianlema15/liquor-store-client.git" },
 			{ name: "Repo Server", link: "https://github.com/fabianlema15/liquor-store-server.git" }]
+
+		},
+		{
+			id: 2,
+			title: "Good Meal",
+			thumbnail: "images/sm9.png",
+			image: "images/bg9.png",
+			desc: "Good Meal is your digital recipe card index file, where users can create and share private and public recipes, store shopping lists, lists of items already in their pantry and create shopping lists from the recipes they have.",
+			tech: ["HTML", "Javascript", "CSS", "RESTful", "ReactJS", "NodeJS", "Postgres", "AWS", "Firebase"],
+			link: [{ name: "Demo", link: "https://good-meal.now.sh" }],
+			repo: [{ name: "Repo Client", link: "https://github.com/thinkful-ei-firefly/recipe-client.git" },
+			{ name: "Repo Server", link: "https://github.com/thinkful-ei-firefly/recipe-server.git" }]
 
 		},
 		{
