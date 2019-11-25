@@ -18,7 +18,7 @@ const initial = (function () {
 
     function loadFooter() {
         $('footer').html(`<div class="footer-links">
-            <a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.linkedin.com/in/fabianlema15" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin"></a>
             <a href="mailto: fabianlemac@gmail.com"><img class="icon" src="images/email.png" alt="Email"></a>
             <a href="https://github.com/fabianlema15" target="_blank"><img class="icon" src="images/github.png" alt="Github"></a>
 						<a href="https://bitbucket.org/fabianlema" target="_blank"><img class="icon" src="images/bitbucket.png" alt="Bitbucket"></a>
@@ -106,7 +106,7 @@ const initial = (function () {
                 <div class="contact-links">
                     <span>if (</span>you want to view my profile<span>){</span>
 
-                    <p><a href="https://www.linkedin.com/in/fabian-lema-79539250" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin">LinkedIn Link</a></p>
+                    <p><a href="https://www.linkedin.com/in/fabianlema15" target="_blank"><img class="icon" src="images/linkedin.png" alt="Linkedin">LinkedIn Link</a></p>
 
                     <span>} else if (</span>you want to check my code<span>) {</span>
 
